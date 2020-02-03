@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ENZO</title>
+</head>
+<script>
+function doThing(x){
+  x.src = "https://i.kym-cdn.com/photos/images/original/001/598/772/918.png";
+  x.style = "width:250px;height:250px;"
+}
+
+function revert(x){
+  x.src = "https://upload.wikimedia.org/wikipedia/en/6/6f/Seal_of_GSMST.png";
+  x.style = "width:200px;height:250px;"
+}
+
+
+function scrollToTop() {
+  //from https://gist.github.com/ricardozea/abb9f98a19f6d04a0269
+  //very cool!
+    var position =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    if (position) {
+        window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+        scrollAnimation = setTimeout("scrollToTop()", 30);
+    } else clearTimeout(scrollAnimation);
+}
+
+
+</script>
+<style>
+ * {box-sizing: border-box}
+
+  a{
+    text-decoration: none;
+    color: #004099
+  }
+  h1{
+    border: 2px solid white;
+    background: #ffffff;
+  }
+
+  body {
+    background: #e0e0eb;
+  }
+  .tab{
+    background-color: #0080ff;
+    color: white;
+    float: left;
+    font-size: 25px;
+    width: 25%;
+    padding: 10px 10px;
+    border: none;
+  }
+
+  .tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  //position: fixed;
+}
+  
+.tab:hover{
+  background-color: #004099;
+  
+
+}
+  body, html{
+    height: 100%;
+    margin: 0:
+  }
+  body{
+    //text-align: center;
+    color: #000000
+  }
+  
+  h1{
+   text-align: center;
+   color: #3f556b;
+   font-family: "Copperplate", Copperplate, fantasy;
+ }
+ 
+ /* hover button styling starts here */
+ .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0080ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.scrollup{
+  position: fixed;
+  top: 750px;
+  left: 600px;
+} 
+
+
+</style>
+<body>
+   
+  <button  onclick = "window.location.href = 'index.html';" class = "tab" >Home</button>
+  <button  onclick = "window.location.href = 'ourschool.html';" class = "tab"  >Our School</button>
+  <button  onclick = "window.location.href = 'ourchapter.html';" class = "tab" >Our Chapter</button>
+  <button  onclick = "window.location.href = 'designbrief.html';" class = "tab" >Design Brief</button>
+  <br>
+  <br>
+<!--actual website content starts here-->
+  <h1> ENZO </h1>
+
+  <h2>About</h2>
+    <p>The mission of Enzo is to ensure our drivers feel like winners no matter the destination they are headed towards. They are the winners of their lives and are in full control. This is because “enzo” means winner in Italian.</p>
+
+  
+  <h2>Battery (bottom of car)</h2>
+    <p>For larger cars/SUVs, the center of gravity is much higher which causes it to rollover much easier. Since the batteries are on the bottom, the center of gravity is lower which allows for much lower chances of rollovers. This ensures the safety of our electric cars.</p>
+
+  <h1>FEATURES<h2>
+    <h3>Sunroof</h3>
+      <p>Solar power on top of car</p>
+
+  <button  onclick="scrollToTop()" class = button>back to the top</button>
+
+</body>
+</html>
