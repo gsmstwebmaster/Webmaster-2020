@@ -10,36 +10,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
+
 <body>
-  <!--navigation bar-->
-  <nav class="navbar navbar-default">
+<!--navigation bar-->
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">TSA Webmasters</a>
+      <a class="navbar-brand" href="#">GSMST</a>
     </div>
   <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="index.html">Home</a></li>
-    <li><a data-toggle="pill" href="about.html">About</a></li>
-    <li><a data-toggle="pill" href="ourchapter.html">Our Chapter</a></li>
-    <li><a data-toggle="pill" href="ourschool.html">Our School</a></li>
-    <li><a data-toggle="pill" href="designbrief.html">Design Brief</a></li>
-  </ul>
-  </div>
-</nav>
-<!-- stuff-->
+      <li class="active">
+        <a data-toggle="pill" href="index.html">Home</a></li>
+      <li><a data-toggle="pill" href="about.html">About</a></li>
+      <li><a data-toggle="pill" href="ourchapter.html">Our Chapter</a></li>
+      <li><a data-toggle="pill" href="ourschool.html">Our School</a></li>
+      <li><a data-toggle="pill" href="designbrief.html">Design Brief</a></li>
+      </ul>
+    </div>
+  </nav>
+
 <div class = "container">
   <div class = "tab-content">
     <div id="home" class="tab-pane fade in active">
-      <!--Flavor Text-->
+      <!--school name-->
       <div class="container-fluid">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
+        <h1>WE ARE GSMST</h1>
       </div>
 
-      <!--More Flavor Text-->
-      <div class="container">
-        <h2> Gwinnett School of Mathematics, Science, and Technology </h2>
-        <div class="container">
           <div class="row">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
@@ -48,7 +45,7 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
               </ol>
 
-              <!-- Wrapper for slides -->
+              <!-- Carousel of images -->
               <div class="carousel-inner">
                 <div class="item active" id="school">
                   <img src="https://bloximages.newyork1.vip.townnews.com/gwinnettdailypost.com/content/tncms/assets/v3/editorial/7/ed/7edbeffe-a14f-5a02-b6d1-530785818661/5afcc89b6ddab.image.jpg?resize=1200%2C796" alt="School">
@@ -87,13 +84,56 @@
       </div>
     </div>
 </body>
+
 <style>
   body {
     background: #e0e0eb;
   }
 
   h1{
-    font-family: 'Oswald', sans-serif;
+    font-family: Lucida Console, Monospace;
+    text-align: center;
   }
+    h1.italic {
+    font-style: italic;
+    }
+
+  h2{
+    font-family: Georgia, serif;
+  }
+
+  p{
+    font-family: Verdana, Sans-serif;
+  }
+
+//customizing navigation toolbar
+
+.navbar {
+  background:#96cce3; //light blue color
+  font-family: Lucida Console, Monospace;
+}
+.navbar {
+  background:#96cce3;
+  font-family: Lucida Console, Monospace;
+}
+.nav-link,
+.navbar-brand {
+  color: #000;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+
 </style>
 </html>
