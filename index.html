@@ -9,81 +9,83 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  </head>
+<body>
   <!--navigation bar-->
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">GSMST</a>
+      <a class="navbar-brand" href="#">TSA Webmaster</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="about.html" data-toggle = "">About</a></li>
-        <li><a href="ourschool.html">Our School</a></li>
-        <li><a href="ourchapter.html">Our Chapter</a></li>
-        <li><a href="designbrief.html">Design Brief Solution</a></li>
-      </ul>
-    </div>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#menu1">About</a></li>
+    <li><a data-toggle="pill" href="#menu2">Our Chapter</a></li>
+    <li><a data-toggle="pill" href="#menu3">Our School</a></li>
+    <li><a data-toggle="pill" href="#menu4">Design Brief</a></li>
+  </ul>
   </div>
 </nav>
+<!-- stuff-->
+<div class = "container">
+  <div class = "tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <!--Flavor Text-->
+      <div class="container-fluid">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+      </div>
 
-</head>
-<body>
+      <!--More Flavor Text-->
+      <div class="container">
+        <h2> Gwinnett School of Mathematics, Science, and Technology </h2>
+        <div class="container">
+          <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
 
-<!--Flavor Text-->
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active" id="school">
+                  <img src="https://bloximages.newyork1.vip.townnews.com/gwinnettdailypost.com/content/tncms/assets/v3/editorial/7/ed/7edbeffe-a14f-5a02-b6d1-530785818661/5afcc89b6ddab.image.jpg?resize=1200%2C796" alt="School">
+                  <div class="carousel-caption">
+                    <h3>School</h3>
+                    <p>The school building is a 4 story tower attached to two wings containing classes from AP Physics to AP Lang.</p>
+                  </div>
+                </div>
 
-<!--More Flavor Text-->
-<div class="container">
-  <h2> Gwinnett School of Mathematics, Science, and Technology </h2>
-<div class="container">
-  <div class="row">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-  </ol>
+                <div class="item" id = "laptop">
+                  <img src="https://www.ajc.com/rf/image_large/Pub/p7/AJC/2016/05/03/Images/photos.medleyphoto.9621836.jpg" alt="Laptop" style="width:100%" alt="Laptop">
+                  <div class="carousel-caption">
+                    <h3>Laptop</h3>
+                    <p>As you can see, our students have a 1:1 laptop to student ratio to enhance learning and prepare the students for a technologically advanced world.</p>
+                  </div>
+                </div>
+              </div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active" id="school">
-      <img src="https://bloximages.newyork1.vip.townnews.com/gwinnettdailypost.com/content/tncms/assets/v3/editorial/7/ed/7edbeffe-a14f-5a02-b6d1-530785818661/5afcc89b6ddab.image.jpg?resize=1200%2C796" alt="School">
-      <div class="carousel-caption">
-        <h3>School</h3>
-        <p>The school building is a 4 story tower attached to two wings containing classes from AP Physics to AP Lang.</p>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        
       </div>
     </div>
-
-    <div class="item" id = "laptop">
-      <img src="https://www.ajc.com/rf/image_large/Pub/p7/AJC/2016/05/03/Images/photos.medleyphoto.9621836.jpg" alt="Laptop" style="width:100%" alt="Laptop">
-      <div class="carousel-caption">
-        <h3>Laptop</h3>
-        <p>As you can see, our students have a 1:1 laptop to student ratio to enhance learning and prepare the students for a technologically advanced world.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
 </body>
 <style>
   body {
