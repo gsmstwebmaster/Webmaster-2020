@@ -1,166 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>ENZO</title>
-  <!--bootstraps stylesheet-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<script>
-
-function scrollToTop() {
-  //from https://gist.github.com/ricardozea/abb9f98a19f6d04a0269
-  //very cool!
-    var position =
-        document.body.scrollTop || document.documentElement.scrollTop;
-    if (position) {
-        window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-        scrollAnimation = setTimeout("scrollToTop()", 30);
-    } else clearTimeout(scrollAnimation);
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About</title>
+    <!--bootstraps stylesheet-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 
 
-</script>
-<style>
- * {box-sizing: border-box}
 
-  a{
-    text-decoration: none;
-    color: #004099
-  }
-  h1{
-    border: 2px solid white;
-    background: #ffffff;
-  }
 
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img   src="https://upload.wikimedia.org/wikipedia/en/6/6f/Seal_of_GSMST.png" width="25" height="30"
+        " alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ourschool.html">CTE</a></li>
+        <li><a href="ourchapter.html">Our Chapter</a></li>
+        <li class="active"><a href="design.html">Design Brief</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div id="Design Brief" class="container">
+    <h1>ENZOOOOOO</h1>
+    <p>JADFKLJDL;FAKLD </p>
+    <script src="script.js"></script>
+    </div>
+  </body>
+  <style>
   body {
     background: #e0e0eb;
   }
-  .tab{
-    background-color: #0080ff;
-    color: white;
-    float: left;
-    font-size: 25px;
-    width: 25%;
-    padding: 10px 10px;
-    border: none;
-  }
 
-  .tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-  //position: fixed;
-}
-  
-.tab:hover{
-  background-color: #004099;
-  
-
-}
-  body, html{
-    height: 100%;
-    margin: 0:
-  }
-  body{
-    //text-align: center;
-    color: #000000
-  }
-  
   h1{
-   text-align: center;
-   color: #3f556b;
-   font-family: "Copperplate", Copperplate, fantasy;
- }
- 
- /* hover button styling starts here */
- .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #0080ff;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
+    font-family: Lucida Console, Monospace;
+    text-align: center;
+  }
+    h1.italic {
+    font-style: italic;
+    }
+
+  h2{
+    font-family: Georgia, serif;
+  }
+
+  h3{
+    color: white;
+  }
+
+  p{
+    font-family: Verdana, Sans-serif;
+    color: white;
+  } p.bold{
+    font-style: bold;
+  }
+
+//customizing navigation toolbar
+
+.navbar {
+  background:#96cce3; //light blue color
+  font-family: Lucida Console, Monospace;
+}
+.navbar {
+  background:#96cce3;
+  font-family: Lucida Console, Monospace;
+}
+.nav-link,
+.navbar-brand {
+  color: #000;
   cursor: pointer;
-  margin: 5px;
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.nav-link {
+  margin-right: 1em !important;
 }
 
-.button:hover span {
-  padding-right: 25px;
+.nav-link:hover {
+  color: #000;
 }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
-.scrollup{
-  position: fixed;
-  top: 750px;
-  left: 600px;
-} 
+.carousel{
+  color: black;
+}
 
 
 </style>
-<body>
-   
-  <!--navigation bar-->
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">TSA Webmaster</a>
-    </div>
-  <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-    <li><a data-toggle="pill" href="#menu1">About</a></li>
-    <li><a data-toggle="pill" href="#menu2">Our Chapter</a></li>
-    <li><a data-toggle="pill" href="#menu3">Our School</a></li>
-    <li><a data-toggle="pill" href="#menu4">Design Brief</a></li>
-  </ul>
-  </div>
-</nav>
-<div id="menu4" class="tab-pane fade">
-<!--actual website content starts here-->
-<div class="container">
-  <h1> ENZO </h1>
-
-  <h2>About</h2>
-    <p>The mission of Enzo is to ensure our drivers feel like winners no matter the destination they are headed towards. They are the winners of their lives and are in full control. This is because “enzo” means winner in Italian.</p>
-  </div>
-<div class="container">
- <h2>Battery (bottom of car)</h2>
-    <p>For larger cars/SUVs, the center of gravity is much higher which causes it to rollover much easier. Since the batteries are on the bottom, the center of gravity is lower which allows for much lower chances of rollovers. This ensures the safety of our electric cars.</p>
-  </div>
-  <div class="container">
-  <h1>FEATURES<h2>
-    <h3>Sunroof</h3>
-      <p>Solar power on top of car</p>
-    </div>
-    </div>
-  <button  onclick="scrollToTop()" class = button>back to the top</button>
-
-</body>
 </html>
