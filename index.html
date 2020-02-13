@@ -256,19 +256,22 @@ I had virtually no rehearsal for that.
 .carousel{
   color: black;
 }
-  
-body {
-    opacity: 1;
-    transition: 1s opacity;
-}
-body.fade-out {
-    opacity: 0;
-    transition: none;
-}
 
-html {
-    background-color: black;
+body { 
+    animation: fadeInAnimation ease 3s 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
 }
+  
 
 </style>
 
