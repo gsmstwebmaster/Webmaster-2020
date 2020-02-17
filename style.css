@@ -1,4 +1,4 @@
-  body {
+ body {
     background: #e0e0eb;
   }
 
@@ -6,7 +6,8 @@
     font-family: Lucida Console, Monospace;
     text-align: center;
   }
-    h1.italic {
+
+  h1.italic {
     font-style: italic;
     }
 
@@ -20,8 +21,10 @@
 
   p{
     font-family: Verdana, Sans-serif;
-    color: white;
-  } p.bold{
+    color: black;
+  } 
+
+  p.bold{
     color: black;
     text-align: center;
   }
@@ -32,13 +35,14 @@
   background:#96cce3; //light blue color
   font-family: Lucida Console, Monospace;
 }
+
 .navbar {
   -webkit-box-shadow: 0px 9px 10px 1px rgba(0,0,0,0.62);
   -moz-box-shadow: 0px 9px 10px 1px rgba(0,0,0,0.62);
   box-shadow: 0px 9px 10px 1px rgba(0,0,0,0.62);
-  background:#96cce3;
   font-family: Lucida Console, Monospace;
 }
+
 .nav-link,
 .navbar-brand {
   color: #000;
@@ -61,7 +65,7 @@
 .navbar-collapse {
   display: flex;
   width: 50%;
-  height: 100%;    
+  height: 100%;   
   justify-content: space-around;
   align-items: center;
 }
@@ -169,5 +173,3 @@
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-
-  
