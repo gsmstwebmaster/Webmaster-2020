@@ -121,7 +121,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 100px;
+  font-size: 150px;
 }
 
 /* Outline */
@@ -129,20 +129,21 @@
 .outlined {
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
   color: white;
+  font-family: Georgia, Serif;
 }
 
 /* Nav bar for design page */
 
 .nav-tabs {
-  background-color: blue;
+  background-color: #0e2433;
 }
 
 .nav-link{
-  color: white;
+  color: rgb(255, 255, 255);
   width: 100px;
   height: 50px;
-  font-size: 20px;
-  font-family: 'Lucida Sans';
+  font-size: 18px;
+  font-family: Lucida Console, Monospace;
 }
 
 /* Fade right */
